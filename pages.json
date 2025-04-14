@@ -12,6 +12,15 @@
 			{
 				"navigationBarTitleText" : ""
 			}
+		},
+		{
+			"path" : "pages/pets/pets",
+			"style" : 
+			{
+				"navigationBarTitleText" : "宠物表情包",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
 		}
 	],
 	"globalStyle": {
@@ -20,5 +29,25 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/pets/pets",
+				"text": "宠物"
+			}
+		]
+	},
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+	  }
+	}
 }

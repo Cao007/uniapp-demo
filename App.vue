@@ -14,4 +14,16 @@ export default {
 
 <style>
 /*每个页面公共css */
+page,
+view,
+text,
+image {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+image {
+	vertical-align: bottom;
+}
 </style>
